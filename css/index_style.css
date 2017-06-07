@@ -125,3 +125,62 @@ ul{
     width: 40%;
     height: 420px;
 }
+
+@media screen and (max-width: 991px) {
+
+    #map {
+    border: 0.8px solid #ffff66;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 50px;
+    margin-bottom: 11px;
+    width: 40%;
+    height: 320px;
+}
+    h1 {
+    font-family: 'Barrio', cursive;
+    font-size: 55px;
+    color:#003d99;
+    text-align: center;
+}
+#searchbar{
+    width: 75%;
+    margin-left: 13%;
+    margin-top: 6%;
+    border-radius: 8px;
+    border: none;
+}
+#searchbar2{
+    width: 75%;
+    margin-left: 33%;
+    margin-top: -5%;
+    border-radius: 8px;
+    border: none;
+}
+.dropbtn {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    width : 100px;
+}
+ h5 {
+    font-family: 'Barrio', cursive;
+    font-weight: 600;
+    font-size: 28px;
+    color: white;
+}
+#line{
+    margin-top: 0.2%;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-left: 22%;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+}
