@@ -52,7 +52,7 @@
 				
 				<!--DIV CONTAINING RESULT DATA-->
 				<div class = "marg">
-					<hr>
+					<hr id = "line">
 					<h3 class = "headd">
 						Information Area
 					</h3>
@@ -66,12 +66,12 @@
 				<div  id = "two" class="row">
 					
 					<!--DIV CONTAINING SEARCH BAR-->
-					<div class = "col-md-3">
+					<div class = "col-md-3 col-xs-3">
 				 		<input id="searchbar" placeholder="search places" data-bind="textInput:query1,event:{keyup:check_data}" >
 				 	</div>
 
 				 	<!--DIV CONTAINING MOVING HEADING--> 
-					<div class = "col-md-5">
+					<div class = "col-md-5 col-xs-5">
 						<marquee behavior = "alternate" direction = "right">
 							<h5>
 								<div id = "or">
@@ -86,12 +86,12 @@
 					</div>
 
 					<!--EMPTY DIV-->
-					<div class = "col-md-1">				<!--DIV CONTAINING SEARCH BAR WITH KNOCKOUT JS APPLIED-->
+					<div class = "col-md-1 col-xs-2">				
 						&nbsp;
 				 	</div> 
 					
 					<!--DIV CONTAINING SEARCH BAR-->
-					<div class = "col-md-3">				<!--DIV CONTAINING SEARCH BAR WITH KNOCKOUT JS APPLIED-->
+					<div class = "col-md-3 col-xs-3">				
 						 <input id="searchbar2" placeholder="search places"  data-bind="textInput:query2,event:{keyup:check_data2}">
 					</div> 
 				
@@ -104,7 +104,7 @@
 			<div class="row">
 				<form align = "center">
 				<!--DIV CONTAINING LIST OF PLACES ON WHICH GETTY IMAGES API IS USED USING KNOCKOUT JS-->
-					<div class="dropdown col-md-3">
+					<div class="dropdown col-md-3 col-xs-3">
 						<button class="dropbtn">Getty Images</button>
 	  					<div class="dropdown-content">
 						    <ul type = "none" data-bind="foreach:marking1">
@@ -118,13 +118,13 @@
 				</form>
 
 				<!--DIV CONTAINING MAP-->
-				<div id="map" class="row col-md-6"> 
+				<div id="map" class="row col-md-6 col-xs-8"> 
 
 				</div>
 				
 				<form align="center">
 				<!--DIV CONTAINING LIST OF PLACES ON WHICH WIKIPEDIA API IS USED USING KNOCKOUT JS-->
-					<div class="dropdown col-md-3">
+					<div class="dropdown col-md-3 col-xs-3">
 	  					<button class="dropbtn">Wikipedia</button>
 	  					<div class="dropdown-content">
 						    <ul type = "none" data-bind="foreach:marking2">
