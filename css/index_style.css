@@ -152,7 +152,7 @@ ul{
     width : 100px;
 }
 .dropdown-content2 {
-    display: block;
+    display: block!important;
 }
 
 .dropbtn2 {
