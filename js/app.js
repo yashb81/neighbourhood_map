@@ -112,6 +112,15 @@ function showData(){
 					marking1()[g].setVisible(false); //MARKER'S VISIBILITY IS SET TO FALSE
 					marking1()[g].displayed(false);  //LIST'S VISIBILITY IS SET TO FALSE
 				}
+        if(marking2()[g].title.toLowerCase().indexOf(query1().toLowerCase())>=0){
+          marking2()[g].setVisible(true);  //MARKER'S VISIBILITY IS SET
+          marking2()[g].displayed(true); //SET LIST ITEM TO TRUE
+        }
+        else
+        {
+          marking2()[g].setVisible(false); //MARKER'S VISIBILITY IS SET TO FALSE
+          marking2()[g].displayed(false);  //LIST'S VISIBILITY IS SET TO FALSE
+        }
 				g++;
 			}
 		}
@@ -121,6 +130,10 @@ function showData(){
 				  marking1()[l].setVisible(true);
 				  marking1()[l].displayed(true);
 				}
+        if(marking2()[l].getVisible()===false){ 
+          marking2()[l].setVisible(true);
+          marking2()[l].displayed(true);
+        }
 				l++;
 			}
 		}
@@ -189,7 +202,7 @@ function getty(title)
     msg(t);      
   })
   .fail(function (data) { //THIS FUNCTION WORKS WHEN CONNECTION FAILS
-    alert(JSON.stringify(data, 2));
+    window.alert(JSON.stringify(data, 2));
   });
 }
 
@@ -208,11 +221,11 @@ function wiki(title)
       var name = data[1][0];
       var result = data[2][0];
 		  var linkwiki = data[3][0];
-      var text=title+'<br>'+result+'<br>'+ '<a>' +linkwiki +'</a>';
+      var text=title+'<br>'+result+'<br>'+ '<a href = "' + linkwiki + '">' +linkwiki +'</a>';
 		  msg(text);
     },
     error: function (e) {      //THIS FUNCTION WORKS WHEN THE CONNECTION FAILS
-      self.e_message("Error encountered. check connection and reload.");
+      window.alert("Error encountered. check connection and reload.");
     }
   });
 }
